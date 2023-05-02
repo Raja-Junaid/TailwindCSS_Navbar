@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar using TailwindCSS and JavaScript</title>
+    <link rel="stylesheet" href="input.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="bg-slate-100">
+      <div class="relative container mx-auto p-6">
+        <div class="flex justify-between items-center">
+          <div class="text-3xl text-blue-800 font-bold md:text-3xl"
+            >Junaid.</div
+          >
+          <div
+            class="hidden space-x-8 mt-1 font-semibold transition-all text-lg md:space-x-11 md:text-xl md:block"
+          >
+            <a href="#" class="hover:text-blue-800">Home</a>
+            <a href="#" class="hover:text-blue-800">About</a>
+            <a href="#" class="hover:text-blue-800">Skills</a>
+            <a href="#" class="hover:text-blue-800">Projects</a>
+            <a href="#" class="hover:text-blue-800">Contact</a>
+          </div>
+          <div class="hamburger block text-3xl text-black md:hidden">
+            <i class="bx bx-menu-alt-right"></i>
+          </div>
+          <div class="close text-3xl text-black md:hidden hidden">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div
+          class="modal absolute flex-col rounded-lg items-center self-end py-8 mt-10 space-y-6 font-bold bg-blue-200 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md hidden"
+        >
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Skills</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
