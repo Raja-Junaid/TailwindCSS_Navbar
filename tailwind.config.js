@@ -2,7 +2,11 @@
 module.exports = {
   content: ["*"],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        custom: "3fr 1fr",
+      },
+    },
   },
   plugins: [],
 };
